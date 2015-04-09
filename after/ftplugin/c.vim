@@ -11,5 +11,5 @@ if !exists("*g:SubEndBracketEndif")
 		silent! -2s/#if\(n\?def\)\? \(.*\)$\n\n[[:space:]]*}/#if\1 \2\r\r#endif \/\*\2\*\//
 	endfunction
 endif
-imap <silent> <buffer> <NL> <CR><CR>}<Esc>:silent! call g:SubEndBracketEndif()<CR>-cc
+inoremap <silent> <buffer> <NL> <CR><CR>}<Esc>:silent! call g:SubEndBracketEndif()<CR>-cc
 
